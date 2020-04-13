@@ -1,0 +1,11 @@
+.btn:hover{
+	background: grey;    
+}
+
+#pic {
+    width: 343px;
+    height: 361px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
