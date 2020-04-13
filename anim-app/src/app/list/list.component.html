@@ -1,0 +1,25 @@
+<h4>Fade-In and Fade-Out Animation</h4>
+
+<button (click)="addItem()">Add List</button>
+<button (click)="removeItem()">Remove List</button>
+
+<div class="list">
+  <ul>
+    <li *ngFor="let list of listFade" [@fadeInOut]>
+      {{list}}
+    </li>
+  </ul>
+</div>
+
+<h4>Enter and Leave Animation</h4>
+
+<button (click)="addList()">Add List</button>
+<button (click)="removeList()">Remove List</button>
+
+<div class="list">
+  <ul>
+    <li *ngFor="let list of listEnter" [@EnterLeave]="'flyIn'">
+      {{list}}
+    </li>
+  </ul>
+</div>
